@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleAppWorks</title>
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --muted: #888;
+      --border: #222;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+    header h1 {
+      font-size: 32px;
+      font-weight: 300;
+      margin: 0 0 8px;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 48px;
+    }
+    .app-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .app-card h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0 0 6px;
+    }
+    .app-card p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+      margin: 0 0 16px;
+    }
+    .app-card a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-right: 16px;
+    }
+    footer {
+      margin-top: 56px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a {
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>SimpleAppWorks</h1>
+      <p>We build small, focused mobile apps.</p>
+    </header>
+
+    <div class="app-card">
+      <h2>Thin Launcher</h2>
+      <p>A distraction-free Android home screen with only the apps you choose, instant search for everything else, and a growing collection of colour themes.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher">Get it on Google Play</a>
+      <a href="PrivacyPolicy/ThinLauncher/">Privacy Policy</a>
+    </div>
+
+    <footer>
+      <p>Contact: <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
