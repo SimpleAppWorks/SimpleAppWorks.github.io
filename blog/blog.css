@@ -230,6 +230,44 @@ footer.site-footer {
 }
 footer.site-footer a { color: var(--muted); }
 
+/* Icons (inline SVG, shared visual language) */
+.icon {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+}
+.icon-badge {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  color: var(--fg);
+  flex-shrink: 0;
+}
+.icon-badge .icon { width: 22px; height: 22px; }
+.post-item .icon-badge { margin-bottom: 12px; }
+
+/* Header graphic atop a blog post, tied to its topic */
+.post-graphic {
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--fg);
+}
+.post-graphic .icon { width: 32px; height: 32px; }
+
 @media (max-width: 480px) {
   header.page-header h1 { font-size: 24px; }
   .site-nav .links a { margin-left: 14px; }
