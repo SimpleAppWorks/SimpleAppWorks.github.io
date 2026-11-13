@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Lora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../blog.css">
 
@@ -40,36 +40,56 @@
   </script>
 </head>
 <body>
-  <div class="wrap">
+  <header>
     <nav class="site-nav">
-      <a class="brand" href="../../index.html">SimpleAppWorks</a>
+      <a class="brand" href="../../index.html">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>
+        Simple App Works
+      </a>
       <span class="links">
         <a href="../../index.html">Home</a>
-        <a href="../index.html">Blog</a>
+        <a href="../index.html" aria-current="page">Blog</a>
+        <a class="btn-contact" href="mailto:simpleappworksltd@gmail.com">Contact us</a>
       </span>
     </nav>
+  </header>
 
-    <p class="breadcrumb"><a href="../index.html">Blog</a> / <a href="index.html">Thin Launcher</a> / The App-Limit Method</p>
-
-    <header class="page-header">
+  <section class="hero">
+    <div class="blob" aria-hidden="true" style="left:50%;top:-260px;width:900px;height:620px;margin-left:-450px;background:#F1F1FB;border-radius:50%;"></div>
+    <div class="article-hero">
+      <p class="breadcrumb">
+        <a href="../index.html">Blog</a>
+        <svg class="sep" viewBox="0 0 24 24" fill="none" stroke="#8D90B5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 5 16 12 9 19"></polyline></svg>
+        <a href="index.html">Thin Launcher</a>
+      </p>
+      <span class="category-pill cat-psych">PSYCHOLOGY &amp; MINDSET</span>
       <h1>Why Limiting Your Home Screen to a Few Apps Beats Blocking Them</h1>
       <p class="lede">A look at the app-count limit as a digital minimalism tool: why a fixed number of home screen apps changes behaviour differently than screen-time trackers or app blockers, and how to try it yourself.</p>
-    </header>
-    <p class="meta">Published November 12, 2026 · Updated November 13, 2026 · Simple App Works · 9 min read</p>
+      <div class="byline">
+        <span class="byline-brand">
+          <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>Simple App Works</span>
+        <span>Published November 12, 2026</span>
+        <span>Updated November 13, 2026</span>
+        <span>9 min read</span>
+      </div>
+    </div>
+  </section>
 
+  <section class="container article-layout">
     <article class="post">
       <div class="answer-box">
-        <span class="answer-label">Quick answer</span>
+        <span class="answer-label">
+          <svg width="16" height="16" viewBox="-12 -12 24 24" aria-hidden="true"><g stroke="#2F3470" stroke-width="2.4" stroke-linecap="round"><line x1="-11" y1="0" x2="11" y2="0"></line><line x1="0" y1="-11" x2="0" y2="11"></line><line x1="-5" y1="-5" x2="5" y2="5"></line><line x1="-5" y1="5" x2="5" y2="-5"></line></g></svg>QUICK ANSWER</span>
         <p>To declutter your home screen for digital minimalism, cut it down to a small, deliberately chosen set of apps (5–11 is typical) instead of tracking or blocking usage. A hard app-count limit removes the absent-minded tap at the source — the app simply isn't on the screen — rather than asking you to resist it after the fact.</p>
       </div>
       <p>Most advice on "reducing phone distractions" starts with tracking. Install a screen-time dashboard, see the ugly number, set a timer, get blocked when you hit it. It works for some people. For a lot of people, it just adds a second layer of friction — now you're negotiating with a block screen, snoozing it, or turning the whole thing off after a bad week.</p>
       <p>There's a quieter approach that doesn't require any tracking at all: change what's physically in front of you. If your home screen only has seven icons on it, you can only absentmindedly tap one of seven things. That's the entire idea behind a <strong>home screen app limit</strong>, and it's worth understanding on its own terms — separate from any specific app — because it's a genuinely different mechanism than blocking.</p>
 
-      <h2>Decision fatigue starts before you've decided anything</h2>
+      <h2 id="decision-fatigue">Decision fatigue starts before you've decided anything</h2>
       <p>A typical Android home screen has somewhere between 20 and 40 icons across a few pages. Every time you unlock your phone without a specific task in mind — which, be honest, is most unlocks — you're looking at a small grid of options and your attention gets grabbed by whichever one is most visually loud or habitually familiar. Social apps are good at this by design. The decision of "what do I open" isn't really a decision; it's a reflex trained by repetition and placement.</p>
       <p>Cutting that grid down to a small, deliberately chosen set changes the reflex. If social media isn't one of your chosen apps, the reflex has nowhere to land. You'd have to actively search for it or dig into the app drawer — a small but real amount of added friction, at exactly the moment your intention is weakest (the mindless unlock), which is when added friction matters most.</p>
 
-      <h2>Why a limit is different from a blocker</h2>
+      <h2 id="limit-vs-blocker">Why a limit is different from a blocker</h2>
       <p>Screen-time and app-blocking tools work by measuring usage and then intervening — a countdown, a lockout screen, a scheduled block window. That's a legitimate approach, and several launchers (minimalist phone, MonoPhone, Zen Detox, among others) build around it well. But it has two structural costs:</p>
       <ul>
         <li><strong>It requires tracking.</strong> To block based on usage, the app has to watch your usage. Some people don't want a log of their phone habits sitting anywhere, even locally.</li>
@@ -77,39 +97,79 @@
       </ul>
       <p>A hard app-count limit on the home screen sidesteps both. There's nothing to track because the constraint isn't about time, it's about layout. And there's no "5 more minutes" button on your home screen — the app simply isn't sitting there to tap. If you want it, you open the app drawer and search for it by name, which is a small, deliberate action rather than an instant tap. You're not blocked from using anything; you've just removed the zero-effort path to it.</p>
 
-      <h2>The "pick your set" moment is the real intervention</h2>
+      <h2 id="pick-your-set">The "pick your set" moment is the real intervention</h2>
       <p>The part that actually does the work isn't the ongoing limit — it's the one-time decision you make when you choose which apps make the cut. Picking 7 (or 11) apps out of the 60+ most phones accumulate forces a small, clarifying moment: what do I actually use on purpose versus what's just there out of habit? Camera, maps, messaging, a calendar — easy yeses. The fourth social app you haven't opened in a week — a much harder one to justify a home screen slot for.</p>
       <p>That single sorting exercise does more behavioural work than most people expect. It's the same principle behind physical decluttering — the "would I buy this again" test — applied to a digital space you look at dozens of times a day.</p>
 
-      <h2>What a numeric limit does and doesn't solve</h2>
+      <h2 id="what-it-solves">What a numeric limit does and doesn't solve</h2>
       <p>To be direct about the limits of this method: a home screen app limit won't stop you from opening an app you've deliberately kept, and it won't track or cap how long you spend once you're in it. If your issue is specifically "I open Instagram and lose 90 minutes once I'm already in it," a limit alone doesn't fix that — a time-based blocker targets that problem more directly.</p>
       <p>What it's very good at is the much more common failure mode: the absent-minded open. Unlocking your phone to check one thing and tapping something else entirely because it happened to be sitting there. Reducing the home screen to a small, intentional set removes that specific failure mode almost completely, because the "something else" simply isn't on the screen to invite the tap.</p>
 
-      <h2>How to try this yourself</h2>
+      <h2 id="how-to-try">How to try this yourself</h2>
       <img class="post-img-side" src="../../assets/screenshots/minimal-home-screen-dark.png" alt="Thin Launcher's minimal home screen in dark theme, showing the time and a short list of chosen apps" loading="lazy">
       <p>You don't need a specific app to test the idea — you could manually strip your current launcher down to 7 home screen icons today and see how it feels. But a dedicated app-limit launcher makes the constraint durable instead of something you quietly undo the first time you're annoyed, because it's an enforced setting rather than a habit you're relying on yourself to maintain.</p>
       <p>That's the specific niche <a href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher">Thin Launcher</a> occupies: a free tier that caps your home screen at 7 apps, a Pro tier (one-time purchase, no subscription) that raises that to 11 if 7 feels too tight, and a plain black-and-white look with optional colour themes if you want some personality back. It doesn't track your screen time or block anything by schedule — it just enforces the layout constraint, consistently, so you're not relying on willpower to keep your home screen small.</p>
       <p>If you've tried screen-time blockers before and found yourself disabling them within a month, the app-limit approach is worth trying as a different angle on the same underlying goal — less mindless phone use, achieved by changing the environment instead of policing the clock.</p>
 
       <div class="cta">
-        <p>Try the app-limit approach on your own home screen.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher" rel="noopener" target="_blank">Get Thin Launcher on Google Play</a>
-      </div>
-
-      <div class="related">
-        <h3>Keep reading</h3>
-        <ul>
-          <li><a href="best-minimalist-launchers-android-2026.html">Best Minimalist Launchers for Android in 2026</a></li>
-          <li><a href="thin-launcher-vs-minimalist-launchers-2026.html">Thin Launcher vs Other Minimalist Launchers</a></li>
-          <li><a href="phone-minimalism-simpler-home-screen.html">Minimalism and Your Phone: How a Simpler Home Screen Changes How You Think</a></li>
-          <li><a href="../../index.html">Back to SimpleAppWorks home</a></li>
-        </ul>
+        <div class="blob" aria-hidden="true" style="right:-50px;top:-60px;width:200px;height:200px;border-radius:50%;"></div>
+        <h3>Try the app-limit approach on your own home screen.</h3>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher" rel="noopener" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5 L19.5 12 L5 20.5 Z" fill="#2F3470"></path></svg>Get Thin Launcher on Google Play</a>
       </div>
     </article>
 
-    <footer class="site-footer">
-      <p>Simple App Works · <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a></p>
-    </footer>
-  </div>
+    <aside class="sidebar">
+      <nav class="toc" aria-label="On this page">
+        <span class="toc-label">ON THIS PAGE</span>
+        <div class="toc-links">
+          <a href="#decision-fatigue">Decision fatigue starts before you've decided anything</a>
+          <a href="#limit-vs-blocker">Why a limit is different from a blocker</a>
+          <a href="#pick-your-set">The "pick your set" moment is the real intervention</a>
+          <a href="#what-it-solves">What a numeric limit does and doesn't solve</a>
+          <a href="#how-to-try">How to try this yourself</a>
+        </div>
+      </nav>
+      <div class="try-card">
+        <span class="try-title">Try a calmer home screen</span>
+        <p>Thin Launcher keeps only the apps you choose in view.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher">Get it on Google Play</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="keep-reading">
+    <div class="container">
+      <h2>Keep reading</h2>
+      <div class="keep-reading-grid">
+        <a class="keep-card lift" href="best-minimalist-launchers-android-2026.html">
+          <span class="kicker">COMPARISONS · NOV 11, 2026</span>
+          <span class="title">Best Minimalist Launchers for Android in 2026</span>
+        </a>
+        <a class="keep-card lift" href="thin-launcher-vs-minimalist-launchers-2026.html">
+          <span class="kicker">COMPARISONS · NOV 10, 2026</span>
+          <span class="title">Thin Launcher vs Other Minimalist Launchers</span>
+        </a>
+        <a class="keep-card lift" href="phone-minimalism-simpler-home-screen.html">
+          <span class="kicker">MINDSET · NOV 12, 2026</span>
+          <span class="title">Minimalism and Your Phone: How a Simpler Home Screen Changes How You Think</span>
+        </a>
+        <a class="keep-card all-articles lift" href="index.html">
+          <span class="title">All Thin Launcher articles</span>
+          <span class="arrow-link">Browse the blog <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#2F3470" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>
+        Simple App Works
+      </a>
+      <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a>
+    </div>
+  </footer>
 </body>
 </html>

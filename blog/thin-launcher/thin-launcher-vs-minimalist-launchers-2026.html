@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Lora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../blog.css">
 
@@ -40,39 +40,58 @@
   </script>
 </head>
 <body>
-  <div class="wrap">
+  <header>
     <nav class="site-nav">
-      <a class="brand" href="../../index.html">SimpleAppWorks</a>
+      <a class="brand" href="../../index.html">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>
+        Simple App Works
+      </a>
       <span class="links">
         <a href="../../index.html">Home</a>
-        <a href="../index.html">Blog</a>
+        <a href="../index.html" aria-current="page">Blog</a>
+        <a class="btn-contact" href="mailto:simpleappworksltd@gmail.com">Contact us</a>
       </span>
     </nav>
+  </header>
 
-    <p class="breadcrumb"><a href="../index.html">Blog</a> / <a href="index.html">Thin Launcher</a> / Thin Launcher vs Other Minimalist Launchers</p>
-
-    <header class="page-header">
+  <section class="hero">
+    <div class="blob" aria-hidden="true" style="left:50%;top:-260px;width:900px;height:620px;margin-left:-450px;background:#EAF4FA;border-radius:50%;"></div>
+    <div class="article-hero">
+      <p class="breadcrumb">
+        <a href="../index.html">Blog</a>
+        <svg class="sep" viewBox="0 0 24 24" fill="none" stroke="#8D90B5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 5 16 12 9 19"></polyline></svg>
+        <a href="index.html">Thin Launcher</a>
+      </p>
+      <span class="category-pill cat-compare">COMPARISONS &amp; ALTERNATIVES</span>
       <h1>Thin Launcher vs Other Minimalist Launchers: Which One Actually Fits You?</h1>
       <p class="lede">A fair, feature-by-feature look at how Thin Launcher stacks up against Slim Launcher, minimalist phone, Olauncher, Before Launcher, and a few other distraction-free launchers for Android.</p>
-    </header>
-    <p class="meta">Published November 10, 2026 · Updated November 13, 2026 · Simple App Works · 8 min read</p>
+      <div class="byline">
+        <span class="byline-brand">
+          <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>Simple App Works</span>
+        <span>Published November 10, 2026</span>
+        <span>Updated November 13, 2026</span>
+        <span>8 min read</span>
+      </div>
+    </div>
+  </section>
 
+  <section class="container article-layout">
     <article class="post">
       <div class="answer-box">
-        <span class="answer-label">Quick answer</span>
+        <span class="answer-label">
+          <svg width="16" height="16" viewBox="-12 -12 24 24" aria-hidden="true"><g stroke="#2F3470" stroke-width="2.4" stroke-linecap="round"><line x1="-11" y1="0" x2="11" y2="0"></line><line x1="0" y1="-11" x2="0" y2="11"></line><line x1="-5" y1="-5" x2="5" y2="5"></line><line x1="-5" y1="5" x2="5" y2="-5"></line></g></svg>QUICK ANSWER</span>
         <p>Thin Launcher and Slim Launcher both hard-limit your home screen, but to different numbers: 7 apps free / 11 on Pro for Thin Launcher versus a fixed 5 for Slim Launcher, per its public listing. Thin Launcher adds colour themes and one-time (not subscription) Pro and Ad-Free purchases; Slim Launcher stays text-only. Neither tracks your screen time — for that, see minimalist phone or MonoPhone below.</p>
       </div>
       <p>If you're reading this, you've probably already decided you want a minimalist Android launcher — the question is which one. There are more "distraction-free" launchers on the Play Store than most people expect, and they're not interchangeable. Some hard-limit your home screen apps. Some focus on blocking apps by the clock. Some are just a plain text list with zero settings. Picking the wrong one means reinstalling your old launcher in a week.</p>
-
       <p>This post compares <strong>Thin Launcher</strong> to the other minimalist and focus launchers people search for most, so you can see where it actually differs instead of taking a marketing page's word for it. Where we're not 100% certain of a competitor's specific numbers, we say so and point you to their public listing.</p>
 
-      <h2>What Thin Launcher actually does</h2>
+      <h2 id="what-it-does">What Thin Launcher actually does</h2>
       <img class="post-img-side" src="../../assets/screenshots/before-after-cluttered-vs-minimal.png" alt="Side-by-side comparison of a cluttered default Android home screen next to Thin Launcher's minimal text-list home screen" loading="lazy">
       <p>Thin Launcher's core mechanic is simple: it <strong>hard-limits how many apps can live on your home screen</strong>. On the free tier, you pick up to 7 apps during onboarding. Upgrade to Pro (a one-time purchase, not a subscription) and that limit rises to 11. Everything else you own is still on your phone — it just lives in the app drawer, one swipe or search away, instead of competing for your attention on the screen you see fifty times a day.</p>
       <p>The visual side is plain black-and-white by default, with a growing set of colour themes (including some Catppuccin-inspired palettes) that you can unlock either by watching a rewarded ad or by buying Pro. There's no subscription anywhere in the app — just one-time purchases for Ad-Free, Pro, and optional tip jars if you want to support development.</p>
       <p>Importantly, Thin Launcher does <strong>not</strong> track your screen time or block apps by schedule. It's a layout and friction tool, not a usage-tracking tool. If what you want is an app-timer or screen-time dashboard, that's a different category of app — more on that distinction below.</p>
 
-      <h2>Thin Launcher vs Slim Launcher</h2>
+      <h2 id="vs-slim">Thin Launcher vs Slim Launcher</h2>
       <p><a href="https://play.google.com/store/apps/details?id=com.sduduzog.slimlauncher" rel="nofollow noopener" target="_blank">Slim Launcher</a> is probably the closest mechanical relative Thin Launcher has. It also enforces a hard cap on home screen apps, and based on its public Play Store listing, that cap is fixed at 5 apps with a text-only, no-wallpaper interface.</p>
       <table class="compare-table">
         <tr><th></th><th>Thin Launcher</th><th>Slim Launcher</th></tr>
@@ -82,15 +101,15 @@
       </table>
       <p>If you want the absolute strictest, most text-first experience and 5 apps is genuinely enough for you, Slim Launcher's fixed limit may suit you well. If you want a slightly higher ceiling (7, or 11 on Pro) and some visual personality via colour themes without giving up the hard-limit mechanic, Thin Launcher gives you that same core discipline with more room to tune it to your taste.</p>
 
-      <h2>Thin Launcher vs minimalist phone</h2>
+      <h2 id="vs-minimalist-phone">Thin Launcher vs minimalist phone</h2>
       <p><a href="https://play.google.com/store/apps/details?id=com.qqlabs.minimalistlauncher" rel="nofollow noopener" target="_blank">minimalist phone</a> is one of the most downloaded apps in this category, and its focus — per its public positioning — is screen-time and app-blocking features with a grayscale aesthetic, often pitched toward ADHD-friendly use cases.</p>
       <p>That's a meaningfully different approach from Thin Launcher. minimalist phone's strength is usage tracking and blocking by schedule; Thin Launcher doesn't do that at all — it never tracks your screen time or enforces time-based blocks. Instead, it changes the environment itself: if an app isn't one of your chosen 7 (or 11), it's simply not sitting on your home screen, so there's nothing to track or block in the first place. Which approach works better depends on whether you respond to "the app isn't blocked, but it's also not in my face" versus "I want a timer and a block on specific apps."</p>
 
-      <h2>Thin Launcher vs Olauncher</h2>
+      <h2 id="vs-olauncher">Thin Launcher vs Olauncher</h2>
       <p><a href="https://play.google.com/store/apps/details?id=app.olauncher" rel="nofollow noopener" target="_blank">Olauncher</a> markets itself as minimal AF — open-source, zero ads, privacy-first, with a clean list-based home screen. It doesn't appear to enforce a hard numeric cap on home screen apps the way Thin Launcher and Slim Launcher do; based on its public listing, it's more about visual simplicity and giving you a small, deliberately chosen set of shortcuts without a strict ceiling mechanic.</p>
       <p>If open-source and zero ads under any circumstance are non-negotiable for you, Olauncher is worth a look. If you specifically want the enforced-scarcity mechanic — a hard wall that stops you from quietly adding a ninth, tenth, eleventh app back onto your home screen — Thin Launcher's limit is the more deliberate constraint, and its free tier still only shows ads rather than requiring payment.</p>
 
-      <h2>Thin Launcher vs Before Launcher, Indistract, MonoPhone, Zen Detox, and Minimo</h2>
+      <h2 id="vs-others">Thin Launcher vs Before Launcher, Indistract, MonoPhone, Zen Detox, and Minimo</h2>
       <p>A few other launchers come up often in "minimalist launcher" searches, each with its own angle, based on their public store listings:</p>
       <ul>
         <li><strong>Before Launcher</strong> leans into notification filtering and a broader mindfulness framing rather than a hard app-count limit.</li>
@@ -101,7 +120,7 @@
       </ul>
       <p>None of these is "wrong" — they're solving slightly different problems. If you want timers, blocking schedules, or app profiles, several of the above are built specifically for that. If what you actually want is simpler than all of that — just fewer icons on the screen you look at constantly, with the rest of your apps one search away — that's the one problem Thin Launcher is built to solve well, and it does it without subscriptions.</p>
 
-      <h2>So which one should you pick?</h2>
+      <h2 id="which-one">So which one should you pick?</h2>
       <p>A rough way to think about it:</p>
       <ul>
         <li>Want the strictest fixed limit and don't need colour themes? Try Slim Launcher.</li>
@@ -112,7 +131,7 @@
       </ul>
       <p>The honest truth is that the "best" minimalist launcher is the one whose specific mechanic matches the specific bad habit you're trying to break. If your problem is "I keep tapping random apps because they're all sitting right there," a hard home-screen limit directly solves that — and that's exactly what Thin Launcher was built around.</p>
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="faq">Frequently asked questions</h2>
       <h3>Is Thin Launcher better than Slim Launcher?</h3>
       <p>Neither is strictly "better" — they're the same core mechanic (a hard home-screen app limit) at different settings. Slim Launcher's limit is a fixed 5 apps with a text-only look. Thin Launcher's limit is 7 (free) or 11 (Pro), with optional colour themes if you want more than plain black-and-white.</p>
       <h3>Is there a minimalist launcher alternative with no subscription?</h3>
@@ -121,24 +140,67 @@
       <p>Thin Launcher and Slim Launcher don't track screen time or usage at all — they only change your home screen layout. minimalist phone and MonoPhone are built specifically around screen-time tracking and scheduled app blocking instead.</p>
 
       <div class="cta">
-        <p>Try the app-limit approach for yourself — free to start, one-time purchase to unlock Pro.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher" rel="noopener" target="_blank">Get Thin Launcher on Google Play</a>
-      </div>
-
-      <div class="related">
-        <h3>Keep reading</h3>
-        <ul>
-          <li><a href="best-minimalist-launchers-android-2026.html">Best Minimalist Launchers for Android in 2026</a></li>
-          <li><a href="app-limit-digital-minimalism.html">Why a Home Screen App Limit Works for Digital Minimalism</a></li>
-          <li><a href="thin-launcher-for-students.html">Thin Launcher for Students: Stay Focused Without Losing Your Phone</a></li>
-          <li><a href="../../index.html">Back to SimpleAppWorks home</a></li>
-        </ul>
+        <div class="blob" aria-hidden="true" style="right:-50px;top:-60px;width:200px;height:200px;border-radius:50%;"></div>
+        <h3>Try the app-limit approach for yourself —</h3>
+        <p>free to start, one-time purchase to unlock Pro.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher" rel="noopener" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5 L19.5 12 L5 20.5 Z" fill="#2F3470"></path></svg>Get Thin Launcher on Google Play</a>
       </div>
     </article>
 
-    <footer class="site-footer">
-      <p>Simple App Works · <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a></p>
-    </footer>
-  </div>
+    <aside class="sidebar">
+      <nav class="toc" aria-label="On this page">
+        <span class="toc-label">ON THIS PAGE</span>
+        <div class="toc-links">
+          <a href="#what-it-does">What Thin Launcher actually does</a>
+          <a href="#vs-slim">Thin Launcher vs Slim Launcher</a>
+          <a href="#vs-minimalist-phone">Thin Launcher vs minimalist phone</a>
+          <a href="#vs-olauncher">Thin Launcher vs Olauncher</a>
+          <a href="#vs-others">vs Before Launcher, Indistract, MonoPhone, and more</a>
+          <a href="#which-one">So which one should you pick?</a>
+          <a href="#faq">Frequently asked questions</a>
+        </div>
+      </nav>
+      <div class="try-card">
+        <span class="try-title">Try a calmer home screen</span>
+        <p>Thin Launcher keeps only the apps you choose in view.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher">Get it on Google Play</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="keep-reading">
+    <div class="container">
+      <h2>Keep reading</h2>
+      <div class="keep-reading-grid">
+        <a class="keep-card lift" href="best-minimalist-launchers-android-2026.html">
+          <span class="kicker">COMPARISONS · NOV 11, 2026</span>
+          <span class="title">Best Minimalist Launchers for Android in 2026</span>
+        </a>
+        <a class="keep-card lift" href="app-limit-digital-minimalism.html">
+          <span class="kicker">PSYCHOLOGY · NOV 12, 2026</span>
+          <span class="title">Why a Home Screen App Limit Works for Digital Minimalism</span>
+        </a>
+        <a class="keep-card lift" href="thin-launcher-for-students.html">
+          <span class="kicker">USE CASES · NOV 12, 2026</span>
+          <span class="title">Thin Launcher for Students: Stay Focused Without Losing Your Phone</span>
+        </a>
+        <a class="keep-card all-articles lift" href="index.html">
+          <span class="title">All Thin Launcher articles</span>
+          <span class="arrow-link">Browse the blog <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#2F3470" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>
+        Simple App Works
+      </a>
+      <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a>
+    </div>
+  </footer>
 </body>
 </html>

@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Lora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../blog.css">
 
@@ -40,39 +40,55 @@
   </script>
 </head>
 <body>
-  <div class="wrap">
+  <header>
     <nav class="site-nav">
-      <a class="brand" href="../../index.html">SimpleAppWorks</a>
+      <a class="brand" href="../../index.html">
+        <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>
+        Simple App Works
+      </a>
       <span class="links">
         <a href="../../index.html">Home</a>
-        <a href="../index.html">Blog</a>
+        <a href="../index.html" aria-current="page">Blog</a>
+        <a class="btn-contact" href="mailto:simpleappworksltd@gmail.com">Contact us</a>
       </span>
     </nav>
+  </header>
 
-    <p class="breadcrumb"><a href="../index.html">Blog</a> / <a href="index.html">Thin Launcher</a> / What Is Brain Rot</p>
-
-    <div class="post-graphic" aria-hidden="true">
-      <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" opacity="0.35"></rect><rect x="7.5" y="7.5" width="9" height="9" rx="1.5" opacity="0.65"></rect><rect x="10.5" y="10.5" width="3" height="3" rx="0.8"></rect></svg>
-    </div>
-
-    <header class="page-header">
+  <section class="hero">
+    <div class="blob" aria-hidden="true" style="left:50%;top:-260px;width:900px;height:620px;margin-left:-450px;background:#F1F1FB;border-radius:50%;"></div>
+    <div class="article-hero">
+      <p class="breadcrumb">
+        <a href="../index.html">Blog</a>
+        <svg class="sep" viewBox="0 0 24 24" fill="none" stroke="#8D90B5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 5 16 12 9 19"></polyline></svg>
+        <a href="index.html">Thin Launcher</a>
+      </p>
+      <span class="category-pill cat-psych">PSYCHOLOGY &amp; MINDSET</span>
       <h1>Brain Rot: What It Actually Means and How Minimalist Design Fights It</h1>
       <p class="lede">"Brain rot" went from a joke in the comments to a word people use seriously about their own attention. Here's what the term is actually pointing at, and what, concretely, makes it worse or better.</p>
-    </header>
-    <p class="meta">Published November 12, 2026 · Updated November 13, 2026 · Simple App Works · 8 min read</p>
+      <div class="byline">
+        <span class="byline-brand">
+          <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>Simple App Works</span>
+        <span>Published November 12, 2026</span>
+        <span>Updated November 13, 2026</span>
+        <span>8 min read</span>
+      </div>
+    </div>
+  </section>
 
+  <section class="container article-layout">
     <article class="post">
       <div class="answer-box">
-        <span class="answer-label">Quick answer</span>
+        <span class="answer-label">
+          <svg width="16" height="16" viewBox="-12 -12 24 24" aria-hidden="true"><g stroke="#2F3470" stroke-width="2.4" stroke-linecap="round"><line x1="-11" y1="0" x2="11" y2="0"></line><line x1="0" y1="-11" x2="0" y2="11"></line><line x1="-5" y1="-5" x2="5" y2="5"></line><line x1="-5" y1="5" x2="5" y2="-5"></line></g></svg>QUICK ANSWER</span>
         <p>"Brain rot" is a popular, informal term — not a medical diagnosis — for the dulled focus and shortened attention span that comes from consuming a lot of low-effort, high-volume content on a loop. It's driven as much by app design (infinite feeds, notification badges, cluttered home screens) as by the content itself, so the fix is reducing those design triggers, not only changing what you watch.</p>
       </div>
       <p>"Brain rot" isn't a clinical term, and nobody is claiming it's a diagnosis. It's a popular, informal label for a feeling a lot of people recognize: after too much low-effort, high-volume content — short clips, rapid-fire posts, an endless feed of things that ask almost nothing of your attention — your focus feels duller, your patience for anything slower feels shorter, and your mind feels, for lack of a better word, mushy. The term is casual. The underlying pattern it's describing is worth taking seriously, because it maps onto some genuinely well-understood ideas about attention and habit.</p>
 
-      <h2>What "brain rot" is actually describing</h2>
+      <h2 id="describing">What "brain rot" is actually describing</h2>
       <p>Strip away the slang and the core claim is simple: <strong>consuming a lot of low-effort content, repeatedly, trains your attention to expect low-effort content</strong>, which makes higher-effort attention (reading, focused work, a real conversation) feel comparatively harder than it used to. This isn't a mysterious or exotic idea — it's a version of a very ordinary principle in psychology: whatever you practice frequently becomes the mode your brain defaults to. If the thing you practice constantly is switching attention every few seconds between short, easy, high-stimulation clips, that fast-switching, low-effort mode is what gets reinforced. Sitting down to read for twenty minutes afterward can feel disproportionately effortful, not because anything is "broken," but because you've spent a lot of recent practice time in the opposite mode.</p>
       <p>To be clear about what this is and isn't: it's a general, widely discussed behavioral pattern, not a specific diagnosis, and this isn't citing any particular study or number. It's closer to "if you only ever sprint, jogging starts to feel unnaturally slow" — a plausible, well-understood kind of practice effect, applied to attention instead of muscles.</p>
 
-      <h2>Why the content side is only half the story</h2>
+      <h2 id="content-side">Why the content side is only half the story</h2>
       <p>Most discussion of brain rot focuses on content — short-form video, rage-bait posts, algorithmic feeds optimized purely for watch time. That's a real part of it. But the <em>design</em> of the apps delivering that content does just as much work, and it gets talked about far less.</p>
       <p>A few specific design choices make the pattern worse, independent of what the content actually is:</p>
       <ul>
@@ -82,7 +98,7 @@
       </ul>
       <p>None of these are about content quality at all. You could swap every short video for an equally short, perfectly wholesome clip, and a feed with no stopping point, a badge-heavy notification system, and a cluttered home screen would still train the same fast-switching, low-effort attention habit. The delivery mechanism matters as much as what's being delivered.</p>
 
-      <h2>Intentional design as the opposite mechanism</h2>
+      <h2 id="intentional-design">Intentional design as the opposite mechanism</h2>
       <p>If constant low-effort, high-switching exposure trains a low-effort, high-switching default, the fix implied by that same logic isn't "never use your phone" — it's reducing how often your environment nudges you toward that mode in the first place. This is the actual argument for minimalist app and home-screen design, stripped of the aesthetic angle: it's not about looking clean, it's about <strong>removing the cues that train fast-switching attention</strong>.</p>
       <p>A few concrete things intentional design does differently:</p>
       <h3>Fewer icons, fewer tiny decisions</h3>
@@ -92,30 +108,66 @@
       <h3>A search instead of a tap</h3>
       <p>Even just adding a small amount of friction — having to search for an app by name instead of tapping an icon that's always sitting there — interrupts the automatic version of the habit. It doesn't block you from anything; it just requires a brief, conscious decision instead of a reflex, which is often enough to break the fast-switch pattern.</p>
 
-      <h2>Where Thin Launcher fits into this</h2>
+      <h2 id="where-it-fits">Where Thin Launcher fits into this</h2>
       <img class="post-img-side" src="../../assets/screenshots/minimal-home-screen-light.png" alt="Thin Launcher's minimal home screen in a light cream colour theme, showing a short, calm list of chosen apps instead of a cluttered grid" loading="lazy">
       <p><a href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher">Thin Launcher</a> is built around exactly that mechanism. The free tier caps your home screen at 7 apps; Pro (a one-time purchase, not a subscription) raises that to 11. Everything else lives in the app drawer, a search away. There are no notification badges cluttering the home screen, no widgets competing for attention, no infinite feed built into the launcher itself — just the apps you actually chose, and nothing else vying for the moment you unlock your phone. It doesn't track your screen time or block anything on a schedule; it simply removes a large share of the low-effort triggers before they get a chance to pull your attention anywhere.</p>
       <p>This isn't a cure for brain rot in the sense of undoing any content you've already consumed — that's not how habits work. But reducing how often your home screen nudges you toward fast, low-effort switching is a direct, structural way to practice the opposite habit a little more each day.</p>
       <p>If you want the broader philosophy behind this — not just the brain-rot angle, but why fewer choices generally leads to calmer, more intentional phone use — read our piece on <a href="phone-minimalism-simpler-home-screen.html">phone minimalism and a simpler home screen</a>. And if you want to understand the specific mechanics of why feeds and notifications are so hard to put down in the first place, see <a href="doom-scrolling-psychology.html">the psychology of doom scrolling</a>.</p>
 
       <div class="cta">
-        <p>Practice a slower, more intentional default.</p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher" rel="noopener" target="_blank">Get Thin Launcher on Google Play</a>
-      </div>
-
-      <div class="related">
-        <h3>Keep reading</h3>
-        <ul>
-          <li><a href="doom-scrolling-psychology.html">Doom Scrolling Psychology: Why You Can't Stop</a></li>
-          <li><a href="phone-minimalism-simpler-home-screen.html">Phone Minimalism: How a Simpler Home Screen Helps</a></li>
-          <li><a href="../../index.html">Back to Simple App Works home</a></li>
-        </ul>
+        <div class="blob" aria-hidden="true" style="right:-50px;top:-60px;width:200px;height:200px;border-radius:50%;"></div>
+        <h3>Practice a slower, more intentional default.</h3>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher" rel="noopener" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5 L19.5 12 L5 20.5 Z" fill="#2F3470"></path></svg>Get Thin Launcher on Google Play</a>
       </div>
     </article>
 
-    <footer class="site-footer">
-      <p>Simple App Works · <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a></p>
-    </footer>
-  </div>
+    <aside class="sidebar">
+      <nav class="toc" aria-label="On this page">
+        <span class="toc-label">ON THIS PAGE</span>
+        <div class="toc-links">
+          <a href="#describing">What "brain rot" is actually describing</a>
+          <a href="#content-side">Why the content side is only half the story</a>
+          <a href="#intentional-design">Intentional design as the opposite mechanism</a>
+          <a href="#where-it-fits">Where Thin Launcher fits into this</a>
+        </div>
+      </nav>
+      <div class="try-card">
+        <span class="try-title">Try a calmer home screen</span>
+        <p>Thin Launcher keeps only the apps you choose in view.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.vathirajan.thinlauncher">Get it on Google Play</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="keep-reading">
+    <div class="container">
+      <h2>Keep reading</h2>
+      <div class="keep-reading-grid">
+        <a class="keep-card lift" href="doom-scrolling-psychology.html">
+          <span class="kicker">PSYCHOLOGY · NOV 12, 2026</span>
+          <span class="title">Doom Scrolling Psychology: Why You Can't Stop</span>
+        </a>
+        <a class="keep-card lift" href="phone-minimalism-simpler-home-screen.html">
+          <span class="kicker">MINDSET · NOV 12, 2026</span>
+          <span class="title">Phone Minimalism: How a Simpler Home Screen Helps</span>
+        </a>
+        <a class="keep-card all-articles lift" href="index.html">
+          <span class="title">All Thin Launcher articles</span>
+          <span class="arrow-link">Browse the blog <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#2F3470" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#2F3470"></rect><rect x="9" y="10" width="16" height="3.4" rx="1.7" fill="#FBEFC0"></rect><rect x="9" y="15.3" width="11" height="3.4" rx="1.7" fill="#F8D9D6"></rect><rect x="9" y="20.6" width="6" height="3.4" rx="1.7" fill="#CFE6F2"></rect></svg>
+        Simple App Works
+      </a>
+      <a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a>
+    </div>
+  </footer>
 </body>
 </html>
