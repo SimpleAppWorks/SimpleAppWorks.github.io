@@ -74,71 +74,23 @@
     }
     .intro {
       position: relative;
-      max-width: 560px;
+      max-width: 520px;
       margin: 0 auto 8px;
+      text-align: center;
     }
-    .intro::after { content: ""; display: block; clear: both; }
     .intro-blob {
       position: absolute;
-      top: -22px;
-      right: -18px;
-      width: 210px;
+      top: -36px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 240px;
       height: 210px;
       z-index: 0;
       pointer-events: none;
     }
-    .intro-img-wrap {
-      position: relative;
-      z-index: 1;
-      float: right;
-      width: 160px;
-      max-width: 42%;
-      margin: 0 0 12px 20px;
-    }
-    .intro-img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-card);
-    }
-    .intro-accent {
-      position: absolute;
-      z-index: 2;
-      bottom: -12px;
-      right: -10px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 4px;
-      width: 44px;
-      padding: 6px;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 6px 18px -4px rgba(43, 38, 34, 0.14);
-      transform: rotate(-6deg);
-    }
-    .intro-accent .cell {
-      aspect-ratio: 1;
-      border-radius: 3px;
-      background: var(--accent);
-    }
-    .intro-accent .cell.faint {
-      background: transparent;
-      border: 1px solid var(--border);
-      opacity: 0.6;
-    }
+    .intro p.about { position: relative; z-index: 1; margin: 0 auto; }
     @media (max-width: 520px) {
-      .intro-img-wrap {
-        float: none;
-        width: 100%;
-        max-width: 220px;
-        margin: 0 auto 16px;
-      }
-      .intro p.about { text-align: center; }
-      .intro-blob,
-      .intro-accent { display: none; }
+      .intro-blob { display: none; }
     }
 
     section.our-apps { margin-top: 48px; }
@@ -250,15 +202,6 @@
         <path d="M35 30 C65 5, 130 2, 170 28 C205 50, 200 85, 185 98 C125 112, 65 108, 35 88 C8 70, 5 55, 35 30Z" style="fill:var(--accent2-soft);" opacity="0.8"></path>
         <path d="M55 20 C95 8, 155 18, 175 48 C192 75, 165 103, 125 100 C85 98, 35 85, 28 58 C23 38, 30 30, 55 20Z" style="fill:var(--accent3-soft);" opacity="0.55"></path>
       </svg>
-      <div class="intro-img-wrap">
-        <img class="intro-img" src="assets/screenshots/before-after-cluttered-vs-minimal.png" alt="Side-by-side comparison of a cluttered default Android home screen next to Thin Launcher's minimal text-list home screen">
-        <div class="intro-accent" aria-hidden="true">
-          <div class="cell"></div>
-          <div class="cell faint"></div>
-          <div class="cell faint"></div>
-          <div class="cell"></div>
-        </div>
-      </div>
       <p class="about">Simple App Works is an independent app studio. We design apps with no unnecessary clutter — fewer options, fewer distractions, more of what you actually came to do. Thin Launcher is our first app. More are on the way.</p>
     </div>
 

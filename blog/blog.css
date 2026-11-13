@@ -131,6 +131,7 @@ article.post ol {
 }
 article.post li { margin-bottom: 8px; }
 article.post a { color: var(--accent); text-decoration: underline; }
+article.post a.btn { color: var(--btn-fg); text-decoration: none; }
 article.post strong { color: var(--fg); }
 article.post blockquote {
   font-family: var(--serif);
