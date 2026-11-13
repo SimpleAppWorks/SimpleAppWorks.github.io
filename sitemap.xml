@@ -2,61 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://simpleappworks.github.io/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://simpleappworks.github.io/blog/index.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/thin-launcher-vs-minimalist-launchers-2026.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/index.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/thin-launcher-vs-minimalist-launchers-2026.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/best-minimalist-launchers-android-2026.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/best-minimalist-launchers-android-2026.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/app-limit-digital-minimalism.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/app-limit-digital-minimalism.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/doom-scrolling-psychology.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/doom-scrolling-psychology.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/what-is-brain-rot.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/what-is-brain-rot.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/phone-minimalism-simpler-home-screen.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/phone-minimalism-simpler-home-screen.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/thin-launcher-for-students.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/thin-launcher-for-students.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://simpleappworks.github.io/blog/thin-launcher-for-professionals.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/thin-launcher-for-professionals.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/self-improvement-starts-with-your-home-screen.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://simpleappworks.github.io/blog/thin-launcher/building-self-discipline-when-your-phone-is-always-there.html</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

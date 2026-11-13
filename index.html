@@ -7,10 +7,18 @@
   <meta name="description" content="Simple App Works builds small, focused mobile apps with no unnecessary clutter. Thin Launcher is our first app, with more on the way.">
   <style>
     :root {
-      --bg: #000;
-      --fg: #fff;
-      --muted: #888;
-      --border: #222;
+      --bg: #faf6f0;
+      --bg-soft: #f1e8da;
+      --card-bg: #fffdf9;
+      --fg: #2b2622;
+      --muted: #746a5e;
+      --border: #e3d5c0;
+      --accent: #a8503a;
+      --accent-soft: #f0d4c6;
+      --accent2: #4d6a5f;
+      --accent2-soft: #dbe6de;
+      --accent3: #b8872f;
+      --accent3-soft: #f1e2bd;
     }
     * { box-sizing: border-box; }
     body {
@@ -20,56 +28,89 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     .wrap {
-      max-width: 680px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 64px 24px 80px;
+      padding: 48px 24px 80px;
+    }
+    nav.top { margin-bottom: 40px; }
+    nav.top a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav.top a:hover { color: var(--accent); }
+
+    header {
+      text-align: center;
+      margin-bottom: 8px;
     }
     header h1 {
-      font-size: 32px;
-      font-weight: 300;
-      margin: 0 0 8px;
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
     }
     header p.tagline {
-      color: var(--muted);
-      font-size: 16px;
-      margin: 0 0 4px;
+      color: var(--accent);
+      font-size: 17px;
+      font-weight: 600;
+      margin: 0 0 14px;
     }
     header p.about {
       color: var(--muted);
-      font-size: 15px;
-      line-height: 1.6;
-      margin: 0 0 40px;
+      font-size: 16px;
+      line-height: 1.65;
+      margin: 0 auto 8px;
+      max-width: 520px;
     }
 
-    /* CSS-only hero: a grid of boxes, a few "chosen", the rest tucked away */
+    /* CSS-only hero: a soft decorative blob behind a grid of boxes,
+       a few "chosen" (active), the rest tucked away (faint) */
     .hero {
       display: flex;
       justify-content: center;
-      margin: 0 0 48px;
+      align-items: center;
+      position: relative;
+      margin: 36px 0 56px;
+      height: 230px;
+    }
+    .hero-blob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 420px;
+      height: 230px;
+      z-index: 0;
     }
     .hero-grid {
+      position: relative;
+      z-index: 1;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      width: 180px;
+      gap: 12px;
+      width: 188px;
     }
     .hero-cell {
       aspect-ratio: 1;
-      border-radius: 10px;
-      border: 1px solid var(--border);
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: var(--card-bg);
     }
     .hero-cell.active {
-      background: #fff;
-      border-color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
     }
     .hero-cell.faint {
-      opacity: 0.35;
+      opacity: 0.55;
       border-style: dashed;
+      background: transparent;
     }
 
+    section.our-apps { margin-top: 8px; }
     section.our-apps h2 {
       font-size: 22px;
-      font-weight: 500;
+      font-weight: 700;
       margin: 0 0 6px;
     }
     section.our-apps p.section-lede {
@@ -95,23 +136,26 @@
     .icon-badge {
       width: 44px;
       height: 44px;
+      background: var(--accent-soft);
       border: 1px solid var(--border);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 14px;
-      color: var(--fg);
+      color: var(--accent);
     }
     .icon-badge .icon { width: 22px; height: 22px; }
     .app-card {
+      background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 24px;
+      box-shadow: 0 2px 10px rgba(43, 38, 34, 0.04);
     }
     .app-card h3 {
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 700;
       margin: 0 0 6px;
     }
     .app-card p {
@@ -121,13 +165,16 @@
       margin: 0 0 16px;
     }
     .app-card a {
-      color: #fff;
+      color: var(--accent);
       text-decoration: underline;
       font-size: 14px;
       margin-right: 16px;
+      font-weight: 600;
     }
     .app-card.app-card-placeholder {
       border-style: dashed;
+      box-shadow: none;
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -140,16 +187,16 @@
       padding-top: 24px;
       color: var(--muted);
       font-size: 14px;
+      text-align: center;
     }
-    footer a {
-      color: var(--muted);
-    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <nav style="margin-bottom: 32px;">
-      <a href="blog/index.html" style="color: var(--muted); text-decoration: none; font-size: 14px;">Blog</a>
+    <nav class="top">
+      <a href="blog/index.html">Blog</a>
     </nav>
     <header>
       <h1>Simple App Works</h1>
@@ -158,6 +205,10 @@
     </header>
 
     <div class="hero" aria-hidden="true">
+      <svg class="hero-blob" viewBox="0 0 420 230" preserveAspectRatio="xMidYMid meet">
+        <path d="M70 60 C130 10, 260 5, 340 55 C410 100, 400 170, 330 195 C250 225, 130 215, 70 175 C15 140, 10 110, 70 60Z" style="fill:var(--accent2-soft);" opacity="0.7"></path>
+        <path d="M110 40 C190 15, 310 35, 350 95 C385 150, 330 205, 250 200 C170 195, 70 170, 55 115 C45 75, 60 60, 110 40Z" style="fill:var(--accent3-soft);" opacity="0.55"></path>
+      </svg>
       <div class="hero-grid">
         <div class="hero-cell active"></div>
         <div class="hero-cell active"></div>

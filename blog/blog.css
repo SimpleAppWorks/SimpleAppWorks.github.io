@@ -1,10 +1,18 @@
 /* Shared styles for SimpleAppWorks blog — extends the look of the main site (index.html) */
 :root {
-  --bg: #000;
-  --fg: #fff;
-  --muted: #888;
-  --border: #222;
-  --accent: #fff;
+  --bg: #faf6f0;
+  --bg-soft: #f1e8da;
+  --card-bg: #fffdf9;
+  --fg: #2b2622;
+  --muted: #746a5e;
+  --border: #e3d5c0;
+  --accent: #a8503a;
+  --accent-soft: #f0d4c6;
+  --accent2: #4d6a5f;
+  --accent2-soft: #dbe6de;
+  --btn-bg: #9c4530;
+  --btn-bg-hover: #863a28;
+  --btn-fg: #fffdf9;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -32,7 +40,7 @@ body {
 .site-nav a.brand {
   color: var(--fg);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
 }
 .site-nav .links a {
@@ -43,7 +51,7 @@ body {
 }
 .site-nav .links a:hover,
 .site-nav a.brand:hover {
-  color: var(--fg);
+  color: var(--accent);
 }
 
 /* Breadcrumb */
@@ -53,72 +61,90 @@ body {
   margin-bottom: 24px;
 }
 .breadcrumb a { color: var(--muted); text-decoration: none; }
-.breadcrumb a:hover { color: var(--fg); }
+.breadcrumb a:hover { color: var(--accent); }
 
 header.page-header h1 {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.25;
   margin: 0 0 12px;
+  color: var(--fg);
 }
 header.page-header p.lede {
   color: var(--muted);
   font-size: 16px;
   margin: 0 0 16px;
 }
+header.page-header p.lede a { color: var(--accent); text-decoration: underline; }
 .meta {
   color: var(--muted);
   font-size: 13px;
   margin: 0 0 40px;
 }
 
+/* Section grouping (used on topic index pages) */
+.group-heading {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin: 40px 0 16px;
+}
+.group-heading:first-of-type { margin-top: 8px; }
+
 /* Article body typography */
 article.post h2 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 40px 0 14px;
+  color: var(--fg);
 }
 article.post h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 28px 0 10px;
+  color: var(--fg);
 }
 article.post p {
-  color: #ddd;
+  color: #4a4238;
   font-size: 16px;
   line-height: 1.7;
   margin: 0 0 18px;
 }
 article.post ul,
 article.post ol {
-  color: #ddd;
+  color: #4a4238;
   font-size: 16px;
   line-height: 1.7;
   margin: 0 0 18px;
   padding-left: 22px;
 }
 article.post li { margin-bottom: 8px; }
-article.post a { color: #fff; text-decoration: underline; }
-article.post strong { color: #fff; }
+article.post a { color: var(--accent); text-decoration: underline; }
+article.post strong { color: var(--fg); }
 article.post blockquote {
   margin: 24px 0;
   padding: 4px 20px;
-  border-left: 2px solid var(--border);
+  border-left: 2px solid var(--accent2);
   color: var(--muted);
   font-style: italic;
 }
 
 /* Comparison / roundup cards */
 .app-card {
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(43, 38, 34, 0.04);
 }
 .app-card h2, .app-card h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 6px;
+  color: var(--fg);
 }
 .app-card p {
   color: var(--muted);
@@ -128,9 +154,10 @@ article.post blockquote {
 }
 .app-card .tag {
   display: inline-block;
-  color: var(--muted);
+  color: var(--accent2);
   font-size: 12px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent2-soft);
+  background: var(--accent2-soft);
   border-radius: 20px;
   padding: 2px 10px;
   margin: 0 6px 10px 0;
@@ -147,17 +174,18 @@ article.post blockquote {
   border: 1px solid var(--border);
   padding: 10px 12px;
   text-align: left;
-  color: #ddd;
+  color: #4a4238;
 }
 .compare-table th {
-  color: #fff;
-  font-weight: 500;
-  background: #0a0a0a;
+  color: var(--fg);
+  font-weight: 600;
+  background: var(--bg-soft);
 }
 .compare-table td.muted { color: var(--muted); }
 
 /* CTA */
 .cta {
+  background: var(--accent2-soft);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 28px 24px;
@@ -165,35 +193,39 @@ article.post blockquote {
   text-align: center;
 }
 .cta p {
-  color: var(--muted);
+  color: var(--fg);
   margin: 0 0 16px;
   font-size: 15px;
 }
 .btn {
   display: inline-block;
-  background: #fff;
-  color: #000;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
   text-decoration: none;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 12px 28px;
   border-radius: 10px;
 }
-.btn:hover { background: #ddd; }
+.btn:hover { background: var(--btn-bg-hover); }
 
 /* Blog index list */
 .post-list .post-item {
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: block;
   text-decoration: none;
+  box-shadow: 0 2px 10px rgba(43, 38, 34, 0.04);
+  transition: border-color 0.15s ease;
 }
+.post-list .post-item:hover { border-color: var(--accent2); }
 .post-list .post-item h2 {
-  color: #fff;
+  color: var(--fg);
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 6px;
 }
 .post-list .post-item p {
@@ -215,8 +247,9 @@ article.post blockquote {
 }
 .related h3 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 14px;
+  color: var(--fg);
 }
 .related ul { padding-left: 0; list-style: none; margin: 0; }
 .related li { margin-bottom: 10px; }
@@ -242,13 +275,14 @@ footer.site-footer a { color: var(--muted); }
 .icon-badge {
   width: 44px;
   height: 44px;
+  background: var(--accent-soft);
   border: 1px solid var(--border);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
-  color: var(--fg);
+  color: var(--accent);
   flex-shrink: 0;
 }
 .icon-badge .icon { width: 22px; height: 22px; }
@@ -258,13 +292,14 @@ footer.site-footer a { color: var(--muted); }
 .post-graphic {
   width: 64px;
   height: 64px;
+  background: var(--accent-soft);
   border: 1px solid var(--border);
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  color: var(--fg);
+  color: var(--accent);
 }
 .post-graphic .icon { width: 32px; height: 32px; }
 
